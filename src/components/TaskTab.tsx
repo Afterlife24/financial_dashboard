@@ -15,7 +15,7 @@ interface TaskTabProps {
 const TaskTab: React.FC<TaskTabProps> = ({ person }) => {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTask, setNewTask] = useState('');
-  const API_URL = 'http://localhost:5000';
+  const API_URL = 'https://5udebzye8d.execute-api.eu-west-3.amazonaws.com';
 
   useEffect(() => {
     fetch(`${API_URL}/tasks/${person}`)

@@ -24,7 +24,7 @@ const RevenueTab: React.FC = () => {
   const [newRevenue, setNewRevenue] = useState({ amount: '', source: '' });
   const [newExpense, setNewExpense] = useState({ amount: '', reason: '' });
 
-  const API_URL = 'http://localhost:5000';
+  const API_URL = 'https://5udebzye8d.execute-api.eu-west-3.amazonaws.com';
 
   // Load data from API
   useEffect(() => {
